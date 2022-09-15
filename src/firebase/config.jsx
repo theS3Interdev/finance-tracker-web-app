@@ -1,4 +1,5 @@
 import firebase from 'firebase/app';
+import 'firebase/auth';
 import 'firebase/firestore';
 
 /** firebase configuration object containing keys and identifiers the app */
@@ -16,7 +17,8 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 /** initialize firebase services */
+const projectAuth = firebase.auth();
 const projectDB = firebase.firestore();
 
 /** export services */
-export { projectDB };
+export { projectAuth, projectDB };
