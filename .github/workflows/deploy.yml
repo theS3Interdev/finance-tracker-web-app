@@ -1,4 +1,4 @@
-name: Build and Deploy to Firebase Hosting
+name: Build and Deploy to Cloud Firestore and Firebase Hosting
 on:
   pull_request:
     branches: main
@@ -45,4 +45,3 @@ jobs:
           args: deploy --only firestore,hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-Footer

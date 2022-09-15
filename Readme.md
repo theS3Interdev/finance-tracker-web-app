@@ -1,10 +1,20 @@
-# React+Tailwind+Vite Starter
+# Finance Tracker Project
 
 ## Summary
 
-Automate building of single page websites and web application projects using React, Tailwind CSS and Vite.
+React.JS project created to learn about
 
-Tailwind CSS is set up and configured with Vite.JS - a rapid development tool for modern web projects that focuses on speed and performance by improving the development experience.
+1. State and useState
+1. Components and Props
+1. Styling React.JS with Tailwind CSS
+1. useEffect hook
+1. React.JS Router
+1. React.JS Context and Reducers
+1. Firebase Cloud Firestore and Hosting
+
+The project also puts into practice proper management of Git by organizing code into staging and production ready branches so that there is always a version of the code ready to go.
+
+Finally, the repetitive process of building and deploying the project to production is automated by using GitHub Actions for onward deployment to Firebase Hosting.
 
 ## Getting Started
 
@@ -28,14 +38,10 @@ yarn
 yarn dev
 ```
 
-5. Optimize for production
-
-```
-yarn build
-```
-
 ## Technologies Used
 
 1. React.JS
-2. Tailwind CSS
-3. Vite.JS
+1. Tailwind CSS
+1. Vite.JS
+1. Firebase Cloud Firestore
+1. Firebase Hosting
