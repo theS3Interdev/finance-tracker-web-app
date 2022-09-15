@@ -4,7 +4,7 @@ import { useSignin } from '../../hooks/useSignin';
 const Signin = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-	const { error, isPending, signin } = useSignin();
+	const { signin, error, isPending } = useSignin();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -17,7 +17,12 @@ const Signin = () => {
 
 			<label>
 				<span>Email:</span>
-				<input type="email" onChange={(e) => setEmail(e.target.value)} value={email} />
+				<input
+					type="email"
+					onChange={(e) => setEmail(e.target.value)}
+					value={email}
+					required
+				/>
 			</label>
 
 			<label>
@@ -26,6 +31,7 @@ const Signin = () => {
 					type="password"
 					onChange={(e) => setPassword(e.target.value)}
 					value={password}
+					required
 				/>
 			</label>
 

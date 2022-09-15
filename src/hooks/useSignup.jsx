@@ -17,7 +17,7 @@ export const useSignup = () => {
 			const res = await projectAuth.createUserWithEmailAndPassword(email, password);
 
 			if (!res) {
-				throw new Error('Could not complete the new user sign up');
+				throw new Error('Could not complete the sign up procedure');
 			}
 
 			/** add the display name to user profile */
@@ -43,5 +43,5 @@ export const useSignup = () => {
 		return () => setIsCancelled(true);
 	}, []);
 
-	return { error, isPending, signup };
+	return { signup, error, isPending };
 };

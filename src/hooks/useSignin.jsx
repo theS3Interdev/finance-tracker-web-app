@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import { projectAuth } from '../firebase/config';
 import { useAuthContext } from './useAuthContext';
 
-export const useSignin = (email, password) => {
+export const useSignin = () => {
 	const [error, setError] = useState(null);
 	const [isPending, setIsPending] = useState(false);
 	const [isCancelled, setIsCancelled] = useState(false);
 	const { dispatch } = useAuthContext();
 
-	const signin = async () => {
+	const signin = async (email, password) => {
 		setError(null);
 		setIsPending(true);
 
@@ -36,5 +36,5 @@ export const useSignin = (email, password) => {
 		return () => setIsCancelled(true);
 	}, []);
 
-	return { isPending, error, signin };
+	return { signin, isPending, error };
 };
