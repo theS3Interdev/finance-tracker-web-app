@@ -45,3 +45,4 @@ yarn dev
 1. Vite.JS
 1. Firebase Cloud Firestore
 1. Firebase Hosting
+1. GitHub Actions
