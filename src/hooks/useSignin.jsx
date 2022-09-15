@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { projectAuth } from '../firebase/config';
 import { useAuthContext } from './useAuthContext';
 
-export const useSignin = () => {
+export const useSignin = (email, password) => {
 	const [error, setError] = useState(null);
 	const [isPending, setIsPending] = useState(false);
 	const [isCancelled, setIsCancelled] = useState(false);

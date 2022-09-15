@@ -23,8 +23,8 @@ export const useSignup = () => {
 			/** add the display name to user profile */
 			await res.user.updateProfile({ displayName });
 
-			/** dispatch signup action */
-			dispatch({ type: 'SIGNUP', payload: res.user });
+			/** dispatch signin action */
+			dispatch({ type: 'SIGNIN', payload: res.user });
 
 			/** update state */
 			if (!isCancelled) {
