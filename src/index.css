@@ -25,6 +25,7 @@
 }
 
 @layer components {
+	/** buttons start */
 	.btn {
 		@apply cursor-pointer rounded-md border-2 border-solid border-darkGreen bg-none py-[6px] px-3 font-bold text-darkGreen;
 	}
@@ -32,4 +33,28 @@
 	.btn:hover {
 		@apply bg-darkGreen text-white;
 	}
+	/** buttons end */
+
+	/** navigation bar start */
+	.navbar {
+		@apply box-border w-full bg-lightGreen py-5 px-[10px];
+	}
+
+	.navbar ul {
+		@apply my-0 mx-auto flex max-w-[960px] items-center;
+	}
+
+	.title {
+		@apply mr-auto text-xl font-bold tracking-[1px];
+	}
+
+	.navbar button,
+	.navbar a {
+		@apply ml-4;
+	}
+
+	.navbar a {
+		@apply text-darkCharcoal no-underline;
+	}
+	/** navigation bar end */
 }
