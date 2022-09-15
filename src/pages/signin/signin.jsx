@@ -11,7 +11,7 @@ const Signin = () => {
 
 	return (
 		<form onSubmit={handleSubmit} className="signin-form">
-			<h2>Sign In</h2>
+			<h2>Signin</h2>
 			<label>
 				<span>Email:</span>
 				<input type="email" onChange={(e) => setEmail(e.target.value)} value={email} />

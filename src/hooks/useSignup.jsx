@@ -11,14 +11,14 @@ export const useSignup = () => {
 
 		try {
 			/** signup procedure */
-			const result = await projectAuth.createUserWithEmailAndPassword(email, password);
+			const res = await projectAuth.createUserWithEmailAndPassword(email, password);
 
-			if (!result) {
-				throw new Error('Could not complete the sign up process');
+			if (!res) {
+				throw new Error('Could not complete the new user signup');
 			}
 
 			/** add the display name to user profile */
-			await result.user.updateProfile({ displayName });
+			await res.user.updateProfile({ displayName });
 
 			setIsPending(false);
 			setError(null);
