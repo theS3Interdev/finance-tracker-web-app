@@ -45,4 +45,3 @@ jobs:
           args: deploy --only firestore,hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-Footer
