@@ -6,7 +6,7 @@
 
 @layer base {
 	body {
-		@apply m-0 font-ubuntu text-neutral-800 antialiased;
+		@apply m-0 font-ubuntu text-lg text-neutral-800 antialiased;
 	}
 
 	ul,
@@ -45,7 +45,7 @@
 	}
 
 	.title {
-		@apply mr-auto text-xl font-bold tracking-[1px];
+		@apply mr-auto text-2xl font-bold tracking-[1px];
 	}
 
 	.navbar button,
@@ -57,4 +57,26 @@
 		@apply text-darkCharcoal no-underline;
 	}
 	/** navigation bar end */
+
+	/** sign in form start */
+	.signin-form {
+		@apply my-[60px] mx-auto max-w-[360px] p-5;
+	}
+
+	.signin-form h2 {
+		@apply text-xl font-bold;
+	}
+
+	.signin-form label {
+		@apply my-[30px] mx-auto block;
+	}
+
+	.signin-form span {
+		@apply mb-[6px] block;
+	}
+
+	.signin-form input {
+		@apply w-full rounded-md py-2 px-[6px] text-lightCharcoal;
+	}
+	/** sign in form end */
 }
