@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthContext } from './hooks/useAuthContext';
 import Home from './pages/home/home';
 import Navbar from './components/Navbar';
@@ -6,7 +6,7 @@ import Signin from './pages/signin/sign-in';
 import Signup from './pages/signup/sign-up';
 
 const App = () => {
-	const { authIsReady } = useAuthContext();
+	const { authIsReady, user } = useAuthContext();
 
 	return (
 		<div className="app">
@@ -14,10 +14,9 @@ const App = () => {
 				<BrowserRouter>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route index element={<Home />} />
-						<Route path="/signin" element={<Signin />} />
-						<Route path="/signup" element={<Signup />} />
+						<Route path="/" element={user ? <Home /> : <Navigate to="/signin" />} />
+						<Route path="/signin" element={user ? <Navigate to="/" /> : <Signin />} />
+						<Route path="/signup" element={user ? <Navigate to="/" /> : <Signup />} />
 					</Routes>
 				</BrowserRouter>
 			)}
