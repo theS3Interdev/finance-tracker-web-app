@@ -109,4 +109,47 @@
 		@apply my-4 text-red-500;
 	}
 	/** sign up form end */
+
+	/** home page start */
+	.container {
+		@apply my-[60px] mx-auto grid max-w-[960px] grid-cols-3;
+	}
+
+	.content {
+		@apply col-span-2 pr-[30px];
+	}
+
+	.sidebar {
+		@apply col-span-1 pl-[30px];
+	}
+
+	.sidebar form {
+		@apply rounded-lg bg-darkGreen p-5;
+	}
+
+	.sidebar input,
+	.sidebar select {
+		@apply mt-2 box-border block w-full rounded-lg border-0 p-[10px] text-base text-charcoal;
+	}
+
+	.sidebar label {
+		@apply mx-auto mt-0 mb-5 text-white;
+	}
+
+	.sidebar button {
+		@apply mt-5 block w-full cursor-pointer rounded-lg border-2 border-solid border-white bg-transparent py-[6px] px-3 text-base text-white;
+	}
+
+	.sidebar h3 {
+		@apply mb-5 text-darkGreen;
+	}
+
+	.sidebar aside {
+		@apply mt-10 text-charcoal;
+	}
+
+	.sidebar aside li {
+		@apply m-[10px];
+	}
+	/** home page end */
 }
