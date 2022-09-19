@@ -1,4 +1,13 @@
 {
-  "indexes": [],
-  "fieldOverrides": []
+	"indexes": [
+		{
+			"collectionGroup": "transactions",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{ "fieldPath": "uid", "mode": "ASCENDING" },
+				{ "fieldPath": "createdAt", "mode": "DESCENDING" }
+			]
+		}
+	],
+	"fieldOverrides": []
 }
