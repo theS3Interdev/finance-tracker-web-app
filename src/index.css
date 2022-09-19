@@ -111,7 +111,7 @@
 	/** sign up form end */
 
 	/** home page start */
-	/* .container {
+	.container {
 		@apply my-[60px] mx-auto grid max-w-[960px] grid-cols-3;
 	}
 
@@ -150,65 +150,24 @@
 
 	.sidebar aside li {
 		@apply m-[10px];
-	} */
+	}
 	/** home page end */
-}
 
-/** home page start */
-.container {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	max-width: 960px;
-	margin: 60px auto;
+	/** transactions list start */
+	.transactions li {
+		@apply relative my-[30px] mx-auto flex items-center overflow-hidden border-[1px] border-l-4 border-solid border-whiteSmoke border-l-darkGreen p-5 shadow-sm shadow-darkCharcoal;
+	}
+
+	.transactions .name {
+		@apply text-xl text-lightCharcoal;
+	}
+
+	.transactions .amount {
+		@apply ml-auto mr-10 text-2xl font-bold text-lightCharcoal;
+	}
+
+	.transactions button {
+		@apply absolute top-0 right-0 cursor-pointer border-none bg-lightGray py-3 px-2 text-center text-base leading-none text-lightCharcoal;
+	}
+	/** transactions list end */
 }
-.content {
-	padding-right: 30px;
-}
-.sidebar {
-	padding-left: 30px;
-}
-.sidebar form {
-	padding: 20px;
-	background: #1f9751;
-	border-radius: 10px;
-}
-.sidebar input,
-.sidebar select {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	margin-top: 8px;
-	box-sizing: border-box;
-	border: 0;
-	border-radius: 4px;
-	color: #555;
-	font-size: 1em;
-}
-.sidebar label {
-	margin: 0 auto 20px;
-	display: block;
-	color: #fff;
-}
-.sidebar button {
-	color: #fff;
-	border: 2px solid #fff;
-	padding: 6px 12px;
-	background-color: transparent;
-	font-size: 1em;
-	border-radius: 4px;
-	cursor: pointer;
-	display: block;
-	width: 100%;
-}
-.sidebar h3 {
-	color: #1f9751;
-	margin-bottom: 20px;
-}
-.sidebar aside {
-	margin-top: 40px;
-	color: #555;
-}
-.sidebar aside li {
-	margin: 10px;
-}
-/** home page end */
