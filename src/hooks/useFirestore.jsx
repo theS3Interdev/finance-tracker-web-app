@@ -1,12 +1,7 @@
 import { useReducer, useEffect, useState } from 'react';
 import { projectDB, timestamp } from '../firebase/config';
 
-let initialState = {
-	success: null,
-	isPending: false,
-	error: null,
-	document: null,
-};
+let initialState = { success: null, isPending: false, error: null, document: null };
 
 const firestoreReducer = (state, action) => {
 	switch (action.type) {
