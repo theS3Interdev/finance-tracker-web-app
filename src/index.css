@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply m-0 font-ubuntu text-lg text-slate-800 antialiased;
+	}
+
+	ul,
+	li,
+	p,
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply m-0 p-0;
+	}
+
+	ul {
+		@apply list-none;
+	}
+}
+
+@layer components {
+	/** buttons start */
+	.btn {
+		@apply cursor-pointer rounded-md border-2 border-solid border-darkGreen bg-none py-[6px] px-3 font-bold text-darkGreen;
+	}
+
+	.btn:hover {
+		@apply bg-darkGreen text-white;
+	}
+	/** buttons end */
+
+	/** navigation bar start */
+	.navbar {
+		@apply box-border w-full bg-lightGreen py-5 px-[10px];
+	}
+
+	.navbar ul {
+		@apply my-0 mx-auto flex max-w-[960px] items-center;
+	}
+
+	.title {
+		@apply mr-auto text-2xl font-bold tracking-[1px];
+	}
+
+	.navbar button,
+	.navbar a {
+		@apply ml-4;
+	}
+
+	.navbar a {
+		@apply text-darkCharcoal no-underline;
+	}
+	/** navigation bar end */
+
+	/** sign in form start */
+	.signin-form {
+		@apply my-[60px] mx-auto max-w-[360px] p-5;
+	}
+
+	.signin-form h2 {
+		@apply text-xl font-bold;
+	}
+
+	.signin-form label {
+		@apply my-[30px] mx-auto block;
+	}
+
+	.signin-form span {
+		@apply mb-[6px] block;
+	}
+
+	.signin-form input {
+		@apply w-full rounded-md py-2 px-[6px] text-lightCharcoal;
+	}
+
+	.signin-form p {
+		@apply my-4 text-red-500;
+	}
+	/** sign in form end */
+
+	/** sign up form start */
+	.signup-form {
+		@apply my-[60px] mx-auto max-w-[360px] p-5;
+	}
+
+	.signup-form h2 {
+		@apply text-xl font-bold;
+	}
+
+	.signup-form label {
+		@apply my-[30px] mx-auto block;
+	}
+
+	.signup-form span {
+		@apply mb-[6px] block;
+	}
+
+	.signup-form input {
+		@apply w-full rounded-md py-2 px-[6px] text-lightCharcoal;
+	}
+
+	.signup-form p {
+		@apply my-4 text-red-500;
+	}
+	/** sign up form end */
+
+	/** home page start */
+	.container {
+		@apply my-[60px] mx-auto grid max-w-[960px] grid-cols-3;
+	}
+
+	.content {
+		@apply col-span-2 pr-[30px];
+	}
+
+	.sidebar {
+		@apply col-span-1 pl-[30px];
+	}
+
+	.sidebar form {
+		@apply rounded-lg bg-darkGreen p-5;
+	}
+
+	.sidebar input,
+	.sidebar select {
+		@apply mt-2 box-border block w-full rounded-lg border-0 p-[10px] text-base text-charcoal;
+	}
+
+	.sidebar label {
+		@apply mx-auto mt-0 mb-5 text-white;
+	}
+
+	.sidebar button {
+		@apply mt-5 block w-full cursor-pointer rounded-lg border-2 border-solid border-white bg-transparent py-[6px] px-3 text-base text-white;
+	}
+
+	.sidebar h3 {
+		@apply mb-5 text-darkGreen;
+	}
+
+	.sidebar aside {
+		@apply mt-10 text-charcoal;
+	}
+
+	.sidebar aside li {
+		@apply m-[10px];
+	}
+	/** home page end */
+}
