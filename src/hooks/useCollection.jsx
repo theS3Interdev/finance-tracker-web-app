@@ -8,7 +8,6 @@ export const useCollection = (collection, _query, _orderBy) => {
 	/** if we don't useRef then an infinite loop will occur in useEffect * /
 	/** _query and _orderBy are arrays and are "different" on every function call */
 	const query = useRef(_query).current;
-
 	const orderBy = useRef(_orderBy).current;
 
 	useEffect(() => {

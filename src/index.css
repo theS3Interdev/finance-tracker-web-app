@@ -167,7 +167,7 @@
 	}
 
 	.transactions button {
-		@apply absolute top-0 right-0 cursor-pointer border-none bg-lightGray py-3 px-2 text-center text-base leading-none text-lightCharcoal;
+		@apply absolute top-0 right-0 cursor-pointer border-none bg-lightGray py-2 px-5 text-center text-base leading-none text-darkCharcoal;
 	}
 	/** transactions list end */
 }
