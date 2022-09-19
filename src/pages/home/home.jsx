@@ -8,7 +8,7 @@ const Home = () => {
 		<div className="container">
 			<div className="content">Transaction List</div>
 			<div className="sidebar">
-				<TransactionForm uid={user.id} />
+				<TransactionForm uid={user.uid} />
 			</div>
 		</div>
 	);
