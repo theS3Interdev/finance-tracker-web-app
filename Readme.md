@@ -10,9 +10,9 @@ React.JS project created to learn about
 1. useEffect hook
 1. React.JS Router
 1. React.JS Context and Reducers
-1. Firebase Cloud Firestore and Hosting
-
-The project also puts into practice proper management of Git by organizing code into staging and production ready branches so that there is always a version of the code ready to go.
+1. Firebase Cloud Firestore
+1. GitHub Actions
+1. GitHub Pages
 
 Finally, the repetitive process of building and deploying the project to production is automated by using GitHub Actions for onward deployment to Firebase Hosting.
 
@@ -44,5 +44,5 @@ yarn dev
 1. Tailwind CSS
 1. Vite.JS
 1. Firebase Cloud Firestore
-1. Firebase Hosting
+1. GitHub Pages
 1. GitHub Actions
